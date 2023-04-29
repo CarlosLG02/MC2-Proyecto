@@ -218,13 +218,13 @@ private Icon icono;
                     }else {
                         Vertice.addVertice(Verticeorigen, Verticedestino);
                         JOptionPane.showMessageDialog(null, "Se agregó el vértice", "Alerta", JOptionPane.WARNING_MESSAGE);
-                        this.pintarImagen(this.jLabel4,"src/main/java/ipc1a/matecompu/Grafo.png");
+                        this.pintarImagen(this.jLabel4,"src/main/java/ipc1a/matecompu/grafo.png");
                     }
             }}
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        this.pintarImagen(jLabel6, "src/main/java/ipc1a/matecompu/Arbol.png");
+        this.pintarImagen(jLabel6, "src/main/java/ipc1a/matecompu/arbol.png");
         String Seleccion = (String) ComboSeleccion.getSelectedItem();
         
         if(Seleccion.equals("(Por defecto)")|Seleccion.equals("Ascendente")){
