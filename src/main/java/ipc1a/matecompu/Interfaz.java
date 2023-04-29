@@ -58,8 +58,11 @@ private Icon icono;
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(1500, 1000));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButton1.setFont(new java.awt.Font("Dialog", 0, 15)); // NOI18N
         jButton1.setText("Agregar");
@@ -68,118 +71,66 @@ private Icon icono;
                 jButton1ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(194, 132, -1, -1));
 
         VerticeOrigen.setFont(new java.awt.Font("Dialog", 0, 15)); // NOI18N
+        getContentPane().add(VerticeOrigen, new org.netbeans.lib.awtextra.AbsoluteConstraints(49, 135, 105, -1));
 
         VerticeDestino.setFont(new java.awt.Font("Dialog", 0, 15)); // NOI18N
+        getContentPane().add(VerticeDestino, new org.netbeans.lib.awtextra.AbsoluteConstraints(49, 237, 105, -1));
 
         jLabel1.setFont(new java.awt.Font("Dialog", 0, 15)); // NOI18N
         jLabel1.setText("Vértice origen");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(49, 106, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Dialog", 0, 15)); // NOI18N
         jLabel2.setText("Vertice destino");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(49, 211, -1, -1));
 
         ComboSeleccion.setFont(new java.awt.Font("Dialog", 0, 15)); // NOI18N
         ComboSeleccion.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "(Por defecto)", "Ascendente", "Descendente", " " }));
+        getContentPane().add(ComboSeleccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(49, 331, -1, -1));
 
         jButton4.setFont(new java.awt.Font("Dialog", 0, 15)); // NOI18N
-        jButton4.setText("Ejecutar");
+        jButton4.setText("Ejecutar arbol");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 610, -1, -1));
 
         jButton5.setFont(new java.awt.Font("Dialog", 0, 15)); // NOI18N
-        jButton5.setText("Limpiar");
+        jButton5.setText("Crear nuevo");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 420, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Dialog", 0, 15)); // NOI18N
-        jLabel3.setText("Seleccione el orden");
+        jLabel3.setText("Seleccione el orden del árbol");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(49, 299, -1, -1));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(736, 237, -1, 24));
 
         jLabel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 460, 480, 340));
 
         jLabel6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 100, 480, 310));
 
         jLabel7.setFont(new java.awt.Font("Dialog", 0, 15)); // NOI18N
         jLabel7.setText("Grafo");
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 70, -1, -1));
 
-        jLabel8.setFont(new java.awt.Font("Dialog", 0, 15)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Dialog", 0, 26)); // NOI18N
         jLabel8.setText("Algoritmo de profundidad");
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 30, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(49, 49, 49)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(VerticeOrigen, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(40, 40, 40)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jButton1)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jButton4)
-                                        .addGap(37, 37, 37)
-                                        .addComponent(jButton5))))
-                            .addComponent(ComboSeleccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 205, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(VerticeDestino, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel3))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel7)
-                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 287, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel5)
-                .addGap(74, 74, 74)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 370, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel8))
-                .addGap(90, 90, 90))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(92, 92, 92)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(VerticeOrigen, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel7)
-                    .addComponent(jLabel8))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jLabel2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(VerticeDestino, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(38, 38, 38)
-                        .addComponent(jLabel3))
-                    .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 152, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(ComboSeleccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton4)
-                    .addComponent(jButton5))
-                .addGap(96, 96, 96))
-        );
+        jLabel9.setFont(new java.awt.Font("Dialog", 0, 15)); // NOI18N
+        jLabel9.setText("Árbol");
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 420, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -187,6 +138,7 @@ private Icon icono;
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         String Verticeorigen = VerticeOrigen.getText();
         String Verticedestino = VerticeDestino.getText();
+        
         
         if(Verticeorigen.equals(Verticeorigen)){
                     final int MinNumero = 1;
@@ -210,6 +162,8 @@ private Icon icono;
                  else{
                      JOptionPane.showMessageDialog(null, "No se admiten palabras, solo letras", "Registro", JOptionPane.WARNING_MESSAGE);
                  }
+             }else if(Verticeorigen.equals(Verticedestino)){
+                    JOptionPane.showMessageDialog(null, "No deben repetir aristas", "Registro", JOptionPane.WARNING_MESSAGE);
              }
             else {
                     if(digitCounter < MinNumero)
@@ -218,22 +172,34 @@ private Icon icono;
                     }else {
                         Vertice.addVertice(Verticeorigen, Verticedestino);
                         JOptionPane.showMessageDialog(null, "Se agregó el vértice", "Alerta", JOptionPane.WARNING_MESSAGE);
-                        this.pintarImagen(this.jLabel4,"src/main/java/ipc1a/matecompu/grafo.png");
+                        new Grafo();
+                        this.pintarImagen(jLabel6, "src/main/java/ipc1a/matecompu/grafo.png");
+
+                        
+
                     }
             }}
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        this.pintarImagen(jLabel6, "src/main/java/ipc1a/matecompu/arbol.png");
-        String Seleccion = (String) ComboSeleccion.getSelectedItem();
-        
+                String Seleccion = (String) ComboSeleccion.getSelectedItem();               
         if(Seleccion.equals("(Por defecto)")|Seleccion.equals("Ascendente")){
         new Grafo(1,0);
+        this.pintarImagen(this.jLabel4,"src/main/java/ipc1a/matecompu/arbol.png");
+        if (Vertice.conexo()){
+        }else {
+        JOptionPane.showMessageDialog(null, "El grafo es disconexo, por lo que el grafo no muestra todos los vertices", "Registro", JOptionPane.WARNING_MESSAGE);
+        }
         }
         if(Seleccion.equals("Descendente")){
-            new Grafo(1,1);
+        new Grafo(1,1);
+        this.pintarImagen(this.jLabel4,"src/main/java/ipc1a/matecompu/arbol.png"); 
+        if (Vertice.conexo()){
+        }else {
+        JOptionPane.showMessageDialog(null, "El grafo es disconexo, por lo que el grafo no muestra todos los vertices", "Registro", JOptionPane.WARNING_MESSAGE);
         }
-        
+        } 
+
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
@@ -292,5 +258,6 @@ private Icon icono;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     // End of variables declaration//GEN-END:variables
 }
